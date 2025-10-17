@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shadow</title>
+</head>
+<body>
+  <div id="preview" contenteditable="true">
+    ff fi fl ffi ffl
+  </div>
+  <div class="pannel">
+    <div class="line comment">
+      /* Preview size
+      <input type="number" id="fontsize" class="comment" value="62" min="8">
+      */
+    </div>
+    <div class="line comment">
+      /* Shadow-based
+      <input type="number" id="directions" class="comment" value="12" min="1">
+      directions for smooth edge */
+    </div>
+    <div class="line comment">
+      /* Decimal precision
+      <input type="number" id="precision" class="comment" value="2" min="1">
+      decimal places */
+    </div>
+    <div class="line"><strong>.bad_compatibility</strong>&nbsp;<span class="red">{</span></div>
+    
+    <div class="line tab">
+      -webkit-text-stroke-width:
+      <input type="number" id="strokewidth" class="cyan" value="4" min="1">
+      <span class="cyan">px</span>;
+    </div>
+    <div class="line tab">
+      -webkit-text-stroke-color:
+      <input type="text" id="color" class="red" value="#DCA3A3">
+      ;
+    </div>
+    <div class="line red">}</div>
+
+    <div class="line"><strong>.workaround</strong>&nbsp;<span class="red">{</span></div>
+    <div class="outline tab">
+      <div class="outkey">text-shadow:</div>
+      <div id="output"></div>
+    </div>
+    <div class="line red">}</div>
+  </div>
+  <footer>
+    A <a href="//coreco.re">これこれ</a> project.
+  </footer>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
